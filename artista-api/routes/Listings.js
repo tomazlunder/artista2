@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
-var Listing=require('../models/User');
+var Listing=require('../models/Listing');
 
 router.get('/:id?',function(req,res,next){
 
 if(req.params.id){
 
-    User.getListingById(req.params.id,function(err,rows){
+    Listing.getListingById(req.params.id,function(err,rows){
 
         if(err)
         {
@@ -19,7 +19,7 @@ if(req.params.id){
 }
 else{
 
- User.getAllListings(function(err,rows){
+ Listing.getAllListings(function(err,rows){
 
         if(err)
         {
@@ -35,7 +35,7 @@ else{
 });
 router.post('/',function(req,res,next){
 
-        User.addListing(req.body,function(err,count){
+        Listing.addListing(req.body,function(err,count){
 
             //console.log(req.body);
             if(err)
@@ -48,7 +48,7 @@ router.post('/',function(req,res,next){
         });
 });
  router.post('/:id',function(req,res,next){
-  User.deleteAll(req.body,function(err,count){
+  Listing.deleteAll(req.body,function(err,count){
     if(err)
     {
       res.json(err);
@@ -61,7 +61,7 @@ router.post('/',function(req,res,next){
 });
 router.delete('/:id',function(req,res,next){
 
-        User.deleteListing(req.params.id,function(err,count){
+        Listing.deleteListing(req.params.id,function(err,count){
 
             if(err)
             {
@@ -76,7 +76,7 @@ router.delete('/:id',function(req,res,next){
 });
 router.put('/:id',function(req,res,next){
 
-    User.updateListing(req.params.id,req.body,function(err,rows){
+    Listing.updateListing(req.params.id,req.body,function(err,rows){
 
         if(err)
         {
