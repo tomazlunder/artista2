@@ -6,6 +6,7 @@
 - run create_testData_script.sql,
 - change root password to test.
 
+### Database model
 ![alt text](https://github.com/tomazlunder/artista2/blob/master/artista-db/model.png "Model")
 
 
