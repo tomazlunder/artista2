@@ -37,7 +37,7 @@ router.post('/',function(req,res,next){
 
         User.addUser(req.body,function(err,count){
 
-            //console.log(req.body);
+            console.log(req.body);
             if(err)
             {
                 res.json(err);

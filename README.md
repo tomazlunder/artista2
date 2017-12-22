@@ -17,3 +17,5 @@ To start the api:
 - cd to ../artista-api
 - npm start
 
+### API test tool
+https://www.getpostman.com/
