@@ -1,0 +1,15 @@
+#H1 Artista
+
+#H2 Database setup
+- Install mySql Server and mySql Workbench (https://dev.mysql.com/downloads/file/?id=473605),
+- run create_script.sql,
+- run create_testData_script.sql,
+- change root password to test.
+
+#H2 API setup
+To start the api:
+- Install NodeJS (https://nodejs.org/en/)
+- cmd
+- cd to ../artista-api
+- npm start
+
