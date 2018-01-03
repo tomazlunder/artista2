@@ -19,3 +19,10 @@ To start the api:
 
 ### API test tool
 https://www.getpostman.com/
+
+### API usage example (table user)
+- Get all users: 	 GET localhost:3000/Users
+- Get specific user: GET localhost:3000/Users/1
+- Insert user: 		 POST localhost:3000/Users/   
+ 					 Header(key:value) = Content-Type : application/json  
+ 					 Body: { "name":"Marko Apijevec", "email":"marko@mail.com", "pwdhash"="0000"}
