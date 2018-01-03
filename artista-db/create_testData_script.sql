@@ -5,17 +5,24 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 USE `artista` ;
 
-INSERT INTO `user` (`name`,`email`,`pwdhash`,`type`) VALUES
-	('Anton Banana', 'anton.banana@mail.com','0000','0');
+INSERT INTO `user` (`name`,`email`,`pwdhash`) VALUES
+	('Anton Banana', 'anton.banana@mail.com','0000');
 
 INSERT INTO `user` (`name`,`email`,`pwdhash`,`type`) VALUES
-	('Anton Banana', 'anton.banana@mail.com','0000','0'),
-    ('Benjamin Hruška', 'ben.hr@mail.com','0000','0'),
-    ('Cene Jabuk', 'cene.ja@mail.com','0000','0'),
-    ('David Mandarina', 'david.ma@mail.com','0000','0'),
-    ('Edvard Grozd', 'edvard.grozd@mail.com','0000','1');
+	('Anton Banana', 'anton.banana@mail.com','0000'),
+    ('Benjamin Hruška', 'ben.hr@mail.com','0000'),
+    ('Cene Jabuk', 'cene.ja@mail.com','0000'),
+    ('David Mandarina', 'david.ma@mail.com','0000'),
+    ('Edvard Grozd', 'edvard.grozd@mail.com','0000'),
+    ('Fony Bony', 'fony.bony@mail.com','0000'),			#Seller
+    ('German Gui', 'german.gui@mail.com', '0000'),		#Seller
+    ('Herman Pomaranča', 'her.pom@mail.com', '0000'),
+    ('Ian Koruza', 'pwner1339@mail.com', '0000'),
+    ('Jaka Kaka', 'jaka.k@mail.com', '0000');
     
-INSERT INTO `seller` (`user`,`rating`) VALUES
-	('5', 0);
+INSERT INTO `seller` (`user`) VALUES
+	('6'),('7');
+    
+    
     
     
