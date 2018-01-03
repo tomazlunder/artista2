@@ -5,12 +5,17 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 USE `artista` ;
 
-INSERT INTO `user` (`id`,`name`,`email`,`pwdhash`,`regTimestamp`,`type`) VALUES
-	('1','Anton Banana', 'anton.banana@mail.com','0000','0'),
-    ('2','Benjamin Hruška', 'ben.hr@mail.com','0000','0'),
-    ('3','Cene Jabuk', 'cene.ja@mail.com','0000','0'),
-    ('4','David Mandarina', 'david.ma@mail.com','0000','0'),
-    ('5','Edvard Grozd', 'edvard.grozd@mail.com','0000','1');
+INSERT INTO `user` (`name`,`email`,`pwdhash`,`type`) VALUES
+	('Anton Banana', 'anton.banana@mail.com','0000','0');
+
+INSERT INTO `user` (`name`,`email`,`pwdhash`,`type`) VALUES
+	('Anton Banana', 'anton.banana@mail.com','0000','0'),
+    ('Benjamin Hruška', 'ben.hr@mail.com','0000','0'),
+    ('Cene Jabuk', 'cene.ja@mail.com','0000','0'),
+    ('David Mandarina', 'david.ma@mail.com','0000','0'),
+    ('Edvard Grozd', 'edvard.grozd@mail.com','0000','1');
     
 INSERT INTO `seller` (`user`,`rating`) VALUES
 	('5', 0);
+    
+    
