@@ -36,10 +36,8 @@ else{
 router.post('/',function(req,res,next){
         console.log(req.body);
 
-
         User.addUser(req.body,function(err,count){
 
-            console.log(req.body);
             if(err)
             {
                 res.json(err);
