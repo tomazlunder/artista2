@@ -6,11 +6,8 @@ var User = {
     getUserById: function(id, callback) {  
         return db.query("select * from user where Id=?", [id], callback);  
     },  
-    addUser: function(user, callback) {
-        console.log("add User log");
-        console.log("add User log");
-
-        return db.query("Insert into `user` (`name`,`email`,`pwdhash`,`type`) values(?,?,?,?)", [user.name, user.email, user.pwdhash, user.type], callback);
+    addUser: function(User, callback) {
+        return db.query("Insert into `user` (`name`,`email`,`pwdhash`,`type`) values(?,?,?,?)", [User.name, User.email, User.pwdhash, User.type], callback);
     },  
     deleteUser: function(id, callback) {  
         return db.query("delete from user where Id=?", [id], callback);  

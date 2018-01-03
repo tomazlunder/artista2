@@ -14,7 +14,7 @@
 To start the api:
 - Install NodeJS (https://nodejs.org/en/)
 - cmd
-- cd to ../artista-api
+- cd to ../artista-api-idea
 - npm start
 
 ### API test tool
