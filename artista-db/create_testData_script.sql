@@ -6,9 +6,6 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 USE `artista` ;
 
 INSERT INTO `user` (`name`,`email`,`pwdhash`) VALUES
-	('Anton Banana', 'anton.banana@mail.com','0000');
-
-INSERT INTO `user` (`name`,`email`,`pwdhash`,`type`) VALUES
 	('Anton Banana', 'anton.banana@mail.com','0000'),
     ('Benjamin Hruška', 'ben.hr@mail.com','0000'),
     ('Cene Jabuk', 'cene.ja@mail.com','0000'),
