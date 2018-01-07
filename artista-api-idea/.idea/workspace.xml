@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07b35f85-d508-43d8-9193-b03bca578e6c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/PictureS.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/PictureService.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models/PictureAPI.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-    </list>
+    <list default="true" id="07b35f85-d508-43d8-9193-b03bca578e6c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -311,12 +305,12 @@
       <updated>1514989798861</updated>
       <workItem from="1514989802038" duration="3149000" />
       <workItem from="1514995141390" duration="1044000" />
-      <workItem from="1515339773167" duration="9643000" />
+      <workItem from="1515339773167" duration="10222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13836000" />
+    <option name="totallyTimeSpent" value="14415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />

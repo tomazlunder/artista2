@@ -35,3 +35,27 @@ GET localhost:3000/Users
  	Header(key:value) = Content-Type : application/json
  	Body: { "name":"Marko Apijevec", "email":"marko@mail.com", "pwdhash"="0000"}
 ```
+
+### Uploading pictures (currently .png only)
+-Uploading profile picture for seller with id = 1
+```
+	POST localhost:3000/PictureService/addProfile
+	Body (form-data) key:value ..
+	picture : example.png
+	seller : 1
+```
+-Uploading picture for sellers portfolio
+```
+	POST localhost:3000/PictureService/addPortfolio
+	Body (form-data) key:value ..
+	picture : example.png
+	seller : 1
+```
+-Uploading picture for seller's (id = 1) listing (id = 1)
+```
+	POST localhost:3000/PictureService/addPortfolio
+	Body (form-data) key:value ..
+	picture : example.png
+	seller : 1
+	listing : 1
+```
