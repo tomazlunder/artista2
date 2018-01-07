@@ -21,5 +21,12 @@ INSERT INTO `seller` (`user`) VALUES
 	('6'),('7');
     
     
+INSERT INTO `category` (`name`) VALUES
+	('Statue'),('Painting'),('Other');
+    
+INSERT INTO `portfolio` (`seller`, `description`) VALUES
+	(1,"I am a very good artist, people like my work"),
+    (2,"I am a decent artist, currently taking orders");
+    
     
     
