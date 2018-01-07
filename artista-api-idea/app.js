@@ -13,7 +13,7 @@ var Sellers = require('./routes/Sellers');
 var Listings = require('./routes/Listings'); 
 var Categories = require('./routes/Categories');
 var Portfolios = require('./routes/Portfolios');
-
+var PictureService = require('./routes/PictureService');
 
 
 
@@ -41,6 +41,8 @@ app.use('/Sellers', Sellers);
 app.use('/Listings', Listings);
 app.use('/Categories', Categories);
 app.use('/Portfolios', Portfolios);
+app.use('/PictureService', PictureService);
+
 
 // catch 404 and forward to error handler  
 app.use(function(req, res, next) {  

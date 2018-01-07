@@ -24,9 +24,14 @@ INSERT INTO `seller` (`user`) VALUES
 INSERT INTO `category` (`name`) VALUES
 	('Statue'),('Painting'),('Other');
     
-INSERT INTO `portfolio` (`seller`, `description`) VALUES
-	(1,"I am a very good artist, people like my work"),
-    (2,"I am a decent artist, currently taking orders");
+
     
+UPDATE `portfolio`
+SET `description` = "I am a very good artist, people like my work"
+WHERE `seller` = 1;
+
+UPDATE `portfolio`
+SET `description` = "I am a decent artist, currently taking orders"
+WHERE `seller` = 2;
     
     
