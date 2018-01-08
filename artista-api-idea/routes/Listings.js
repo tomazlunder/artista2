@@ -77,20 +77,26 @@ router.put('/:id',function(req,res,next){
     });
 });
 
-//GET PROFILE PICTURE OR DEFAULT IF NONE
+//GET PICTURE IDS RELATED TO LISTING
 router.get('/:id/pictures', function(req,res,next){
 
     if(req.params.id){
         Listing.pictureIds(req.params.id,function(err,rows){
             console.log(rows)
 
+            var ids = [];
+            rows.forEach(function(element){
+                ids.push(element.picture_id);
+            })
+
+            console.log(ids);
 
             if(err)
             {
                 res.json(err);
             }
             else{
-                res.json(rows);
+                res.json(ids);
 
             }
         });

@@ -14,6 +14,10 @@ var Portfolio = {
     },  
     updatePortfolio: function(id, Portfolio, callback) {  
         return db.query("update portfolio set id=?,seller=?,description=?", [Portfolio.id, Portfolio.seller, Portfolio.description], callback);  
-    }  
+    },
+
+    pictureIds: function(id,callback){
+        return db.query("select picture_id from portfolio_picture where portfolio_id = ?", [id], callback);
+    }
 };  
 module.exports = Portfolio; 
