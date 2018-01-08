@@ -13,8 +13,9 @@ var Sellers = require('./routes/Sellers');
 var Listings = require('./routes/Listings'); 
 var Categories = require('./routes/Categories');
 var Portfolios = require('./routes/Portfolios');
-var PictureService = require('./routes/PictureService');
+var PictureService = require('./routes/Pictures');
 
+var public = require
 
 
 
@@ -32,7 +33,8 @@ app.use(bodyParser.urlencoded({
     extended: false  
 }));  
 app.use(cookieParser());  
-app.use(express.static(path.join(__dirname, 'public')));  
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 
 app.use('/', routes);  

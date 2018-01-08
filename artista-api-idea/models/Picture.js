@@ -1,5 +1,5 @@
 var db = require('../dbconnection'); //reference of dbconnection.js
-var PictureS = {
+var Picture = {
     addProfilePicture: function(seller, path, callback) {
 
         return db.query("CALL proc_addProfilePicture(?,?)", [seller, path], callback);
@@ -13,4 +13,4 @@ var PictureS = {
         return db.query("CALL proc_addListingPicture(?,?,?)", [seller, path, listing], callback);
     }
 };
-module.exports = PictureS;
+module.exports = Picture;

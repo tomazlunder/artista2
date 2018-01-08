@@ -47,18 +47,6 @@ router.post('/',function(req,res,next){
             }
         });
 });
- router.post('/:id',function(req,res,next){
-  Listing.deleteAll(req.body,function(err,count){
-    if(err)
-    {
-      res.json(err);
-    }
-    else
-    {
-      res.json(count);
-    }
-  });
-});
 router.delete('/:id',function(req,res,next){
 
         Listing.deleteListing(req.params.id,function(err,count){
@@ -88,4 +76,5 @@ router.put('/:id',function(req,res,next){
         }
     });
 });
+
 module.exports=router;
