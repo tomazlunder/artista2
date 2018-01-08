@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var Picture=require('../models/Picture');
+var path = require('path');
+
 
 var multer  = require('multer');
 var storage = multer.diskStorage({
@@ -78,9 +80,32 @@ router.post('/addPortfolio',upload.single('picture'),function(req,res,next){
 
 });
 
-router.get('/:id',function(req,res,next){
+router.get('/:id?',function(req,res,next){
+    if(req.params.id) {
+        Picture.getPathById(req.params.id, function (err, rows) {
+            console.log(rows);
 
+            if (rows[0] == null) {
+                //res.json(err);
+                return;
+            }
 
+            var rel_path = rows[0].path;
+            rel_path = __dirname + '\\' + rel_path;
+            console.log(rel_path);
+            console.log(path.resolve(rel_path));
+
+            if (err) {
+                res.json(err);
+            }
+            else {
+                res.sendFile(path.resolve(rel_path));
+                //res.json(rows);
+
+            }
+        });
+    }
 });
+
 
 module.exports = router;

@@ -41,7 +41,7 @@ app.use('/Sellers', Sellers);
 app.use('/Listings', Listings);
 app.use('/Categories', Categories);
 app.use('/Portfolios', Portfolios);
-app.use('/PictureService', PictureService);
+app.use('/Pictures', PictureService);
 
 
 // catch 404 and forward to error handler  
