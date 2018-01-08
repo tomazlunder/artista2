@@ -39,21 +39,21 @@ GET localhost:3000/Users
 ### Uploading pictures (currently .png only)
 - Uploading profile picture for seller with id = 1
 ```
-	POST localhost:3000/PictureService/addProfile
+	POST localhost:3000/Pictures/addProfile
 	Body (form-data) key:value ..
 	picture : example.png
 	seller : 1
 ```
 - Uploading picture for sellers portfolio
 ```
-	POST localhost:3000/PictureService/addPortfolio
+	POST localhost:3000/Pictures/addPortfolio
 	Body (form-data) key:value ..
 	picture : example.png
 	seller : 1
 ```
 - Uploading picture for seller's (id = 1) listing (id = 1)
 ```
-	POST localhost:3000/PictureService/addListing
+	POST localhost:3000/Pictures/addListing
 	Body (form-data) key:value ..
 	picture : example.png
 	seller : 1
