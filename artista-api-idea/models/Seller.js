@@ -19,5 +19,6 @@ var Seller = {
     getProfilePicture: function(id, callback){
         return db.query("select path from picture where seller = ? && isProfile = 1", [id], callback);
     }
+
 };  
 module.exports = Seller; 

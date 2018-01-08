@@ -77,7 +77,7 @@ router.put('/:id',function(req,res,next){
     });
 });
 
-//GET PICTURE IDS RELATED TO LISTING
+//GET PICTURE IDS RELATED TO PORTFOLIOS
 router.get('/:id/pictures', function(req,res,next){
 
     if(req.params.id){

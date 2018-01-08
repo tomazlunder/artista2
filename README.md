@@ -64,7 +64,7 @@ When uploaded they are renamed to picture-random_number-timestamp.png and the pa
 
 - Same for portfolios
 ```
-	GET localhost:3000/Portfolios/[id]/pictures
+	GET localhost:3000/Portfolios/[seller id]/pictures
 
 	Example result: [20,51,105]
 ```
