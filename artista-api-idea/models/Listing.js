@@ -16,7 +16,7 @@ var Listing = {
         return db.query("update listing set id=?, seller=?, price=?, description=?,shown=?,category=?,mainPic=?", [Listing.id,Listing.seller,Listing.price,Listing.description, Listing.shown, Listing.category, Listing.mainPic], callback);  
     },
 
-    picturePaths: function(id,callback){
+    pictureIds: function(id,callback){
         return db.query("select picture_id from listing_picture where listing_id = ?", [id], callback);
     }
 };  

@@ -78,10 +78,10 @@ router.put('/:id',function(req,res,next){
 });
 
 //GET PROFILE PICTURE OR DEFAULT IF NONE
-router.get('/:id/picture', function(req,res,next){
+router.get('/:id/pictures', function(req,res,next){
 
     if(req.params.id){
-        Listing.picturePaths(req.params.id,function(err,rows){
+        Listing.pictureIds(req.params.id,function(err,rows){
             console.log(rows)
 
 

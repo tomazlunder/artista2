@@ -36,14 +36,13 @@ WHERE `seller` = 2;
     
     
 INSERT INTO `picture`(`seller`,`isProfile`,`path`) VALUES
-	(1,1,"..\\public\\pictures\\test1.png"),
-    (1,0,"..\\public\\pictures\\listing1_1.png"),
-	(1,0,"..\\public\\pictures\\listing1_2.png");
+	(1,1,"..\\public\\pictures\\test1.png");
 
     
 INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`) VALUES
-	(1,199.98,"Statue of david, cheap!", 1, 1, 2);
+	(1,199.98,"Statue of david, cheap!", 1, 1, null);
     
+CALL proc_addListingPicture(1,"..\\public\\pictures\\listing1_1.png",1);
 CALL proc_addListingPicture(1,"..\\public\\pictures\\listing1_2.png",1);
     
     
