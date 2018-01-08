@@ -14,6 +14,10 @@ var Seller = {
     },  
     updateSeller: function(id, Seller, callback) {  
         return db.query("update seller set id=?,name=?, email=?, pwdHash=?, regTimestamp=?,type=? where id=?", [User.id, User.user, User.rating], callback);  
-    }  
+    },
+
+    getProfilePicture: function(id, callback){
+        return db.query("select path from picture where seller = ? && isProfile = 1", [id], callback);
+    }
 };  
 module.exports = Seller; 

@@ -59,3 +59,9 @@ GET localhost:3000/Users
 	seller : 1
 	listing : 1
 ```
+
+### Getting pictures
+- Getting sellers profile picture (or default if he doesn't have it)
+```
+	GET localhost:3000/Sellers/[id]/picture
+```

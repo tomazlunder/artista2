@@ -35,3 +35,7 @@ SET `description` = "I am a decent artist, currently taking orders"
 WHERE `seller` = 2;
     
     
+INSERT INTO `picture`(`seller`,`isProfile`,`path`) VALUES
+	(1,1,"..\\public\\pictures\\test1.png");
+    
+    
