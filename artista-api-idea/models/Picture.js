@@ -10,7 +10,7 @@ var Picture = {
     },
     addListingPicture: function(seller, path, listing, callback) {
 
-        return db.query("CALL proc_addListingPicture(?,?,?)", [seller, path, listing], callback);
+        return db.query("CALL proc_addListingPicture(?,?)", [listing, path], callback);
     },
     getPathById: function(id, callback) {
         return db.query("select path from picture where id=?", [id], callback);

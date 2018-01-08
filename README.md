@@ -36,32 +36,65 @@ GET localhost:3000/Users
  	Body: { "name":"Marko Apijevec", "email":"marko@mail.com", "pwdhash"="0000"}
 ```
 
-### Uploading pictures (currently .png only)
+
+## API - Pictures
+Pictures are stored in "../artista-api-idea/public/pictures"
+When uploaded they are renamed to picture-random_number-timestamp.png and the path to the file is saved in the picture table of the database.
+
+### Getting pictures
+- Pictures can be retreived by their id:
+
+```
+	GET localhost:3000/Pictures/[id]
+```
+
+- Sellers profile picture can be retreived by his id (if there is no profile picture it retrieves the default image)
+```
+	GET localhost:3000/Sellers/[id]/picture
+```
+
+
+
+- You can also retrieve picture ids of certain listings (to then use to retrieve the them)
+```
+	GET localhost:3000/Listings/[id]/pictures
+
+	Example result: [45,47,67]
+```
+
+- Same for portfolios
+```
+	GET localhost:3000/Portfolios/[id]/pictures
+
+	Example result: [20,51,105]
+```
+
+
+### Uploading pictures (currently .png/ .jpg only)
 - Uploading profile picture for seller with id = 1
 ```
 	POST localhost:3000/Pictures/addProfile
+
 	Body (form-data) key:value ..
 	picture : example.png
 	seller : 1
 ```
+
 - Uploading picture for sellers portfolio
 ```
 	POST localhost:3000/Pictures/addPortfolio
+
 	Body (form-data) key:value ..
 	picture : example.png
 	seller : 1
 ```
+
 - Uploading picture for seller's (id = 1) listing (id = 1)
 ```
 	POST localhost:3000/Pictures/addListing
+
 	Body (form-data) key:value ..
 	picture : example.png
 	seller : 1
 	listing : 1
-```
-
-### Getting pictures
-- Getting sellers profile picture (or default if he doesn't have it)
-```
-	GET localhost:3000/Sellers/[id]/picture
 ```

@@ -42,7 +42,20 @@ INSERT INTO `picture`(`seller`,`isProfile`,`path`) VALUES
 INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`) VALUES
 	(1,199.98,"Statue of david, cheap!", 1, 1, null);
     
-CALL proc_addListingPicture(1,"..\\public\\pictures\\listing1_1.png",1);
-CALL proc_addListingPicture(1,"..\\public\\pictures\\listing1_2.png",1);
+INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`) VALUES
+	(1,3.50,"Mona Lisa", 1, 2, null);
     
+INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`) VALUES
+	(2,200000,"Lucian Freud's Francis Bacon", 1, 2, null);
     
+CALL proc_addProfilePicture(1,"..\\public\\pictures\\test1.png");
+    
+CALL proc_addListingPicture(1,"..\\public\\pictures\\listing1_1.png");
+CALL proc_addListingPicture(1,"..\\public\\pictures\\listing1_2.png");
+
+CALL proc_addListingPicture(2,"..\\public\\pictures\\listing2_1.png");
+CALL proc_addListingPicture(2,"..\\public\\pictures\\listing2_2.png");
+
+CALL proc_addListingPicture(3,"..\\public\\pictures\\listing3_1.png");
+
+CALL proc_addPortfolioPicture(1,"..\\public\\pictures\\test1.png");
