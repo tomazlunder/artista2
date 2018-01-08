@@ -80,6 +80,7 @@ router.post('/addPortfolio',upload.single('picture'),function(req,res,next){
 
 });
 
+//GET PICTURE BY ID
 router.get('/:id?',function(req,res,next){
     if(req.params.id) {
         Picture.getPathById(req.params.id, function (err, rows) {
