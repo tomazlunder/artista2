@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07b35f85-d508-43d8-9193-b03bca578e6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Seller.js" afterPath="$PROJECT_DIR$/models/Seller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Portfolios.js" afterPath="$PROJECT_DIR$/routes/Portfolios.js" />
-    </list>
+    <list default="true" id="07b35f85-d508-43d8-9193-b03bca578e6c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -217,7 +214,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="151" />
     <option name="y" value="-28" />
     <option name="width" value="1482" />
@@ -380,12 +377,12 @@
       <workItem from="1514989802038" duration="3149000" />
       <workItem from="1514995141390" duration="1044000" />
       <workItem from="1515339773167" duration="10233000" />
-      <workItem from="1515416381910" duration="14725000" />
+      <workItem from="1515416381910" duration="15100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29151000" />
+    <option name="totallyTimeSpent" value="29526000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,7 +394,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -710,6 +707,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/Picture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Seller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/Pictures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="59" column="3" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
+          <folding>
+            <element signature="e#203#476#0" expanded="false" />
+            <element signature="e#768#991#0" expanded="false" />
+            <element signature="e#795#865#0" expanded="false" />
+            <element signature="e#878#985#0" expanded="false" />
+            <element signature="e#1285#1486#0" expanded="false" />
+            <element signature="e#1311#1381#0" expanded="false" />
+            <element signature="e#1403#1480#0" expanded="false" />
+            <element signature="e#1594#1997#0" expanded="false" />
+            <element signature="e#1767#1968#0" expanded="false" />
+            <element signature="e#1793#1863#0" expanded="false" />
+            <element signature="e#1885#1962#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/Listing.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -718,11 +751,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Picture.js">
+    <entry file="file://$PROJECT_DIR$/routes/Portfolios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#153#559#0" expanded="false" />
+            <element signature="e#600#893#0" expanded="false" />
+            <element signature="e#939#1183#0" expanded="false" />
+            <element signature="e#1226#1436#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -757,52 +795,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Portfolios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="e#153#559#0" expanded="false" />
-            <element signature="e#600#893#0" expanded="false" />
-            <element signature="e#939#1183#0" expanded="false" />
-            <element signature="e#1226#1436#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Portfolio.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Seller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Pictures.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="59" column="3" lean-forward="true" selection-start-line="59" selection-start-column="3" selection-end-line="59" selection-end-column="3" />
-          <folding>
-            <element signature="e#203#476#0" expanded="false" />
-            <element signature="e#768#991#0" expanded="false" />
-            <element signature="e#795#865#0" expanded="false" />
-            <element signature="e#878#985#0" expanded="false" />
-            <element signature="e#1285#1486#0" expanded="false" />
-            <element signature="e#1311#1381#0" expanded="false" />
-            <element signature="e#1403#1480#0" expanded="false" />
-            <element signature="e#1594#1997#0" expanded="false" />
-            <element signature="e#1767#1968#0" expanded="false" />
-            <element signature="e#1793#1863#0" expanded="false" />
-            <element signature="e#1885#1962#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

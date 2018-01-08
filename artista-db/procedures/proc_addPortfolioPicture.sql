@@ -6,5 +6,7 @@ BEGIN
 
 	INSERT INTO `picture`(`seller`,`isProfile`,`path`) VALUES (seller,0,path);
     
-    INSERT INTO `portfolio_picture`(`portfolio_id`,`picture_id`) VALUES (portfolio_id, LAST_INSERT_ID());
+    SET @last_ins = (LAST_INSERT_ID());
+    
+    INSERT INTO `portfolio_picture`(`portfolio_id`,`picture_id`) VALUES (@portfolio_id, @last_ins);
 END
