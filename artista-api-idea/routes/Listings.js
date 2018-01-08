@@ -77,4 +77,25 @@ router.put('/:id',function(req,res,next){
     });
 });
 
+//GET PROFILE PICTURE OR DEFAULT IF NONE
+router.get('/:id/picture', function(req,res,next){
+
+    if(req.params.id){
+        Listing.picturePaths(req.params.id,function(err,rows){
+            console.log(rows)
+
+
+            if(err)
+            {
+                res.json(err);
+            }
+            else{
+                res.json(rows);
+
+            }
+        });
+    }
+
+});
+
 module.exports=router;
