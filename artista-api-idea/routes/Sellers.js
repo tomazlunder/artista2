@@ -21,13 +21,21 @@ router.get('/:id?',function(req,res,next){
 if(req.params.id){
 
     Seller.getSellerById(req.params.id,function(err,rows){
-
+        console.log(rows);
         if(err)
         {
             res.json(err);
         }
         else{
-            res.json(rows);
+            var data = {};
+            rows.map(function(row) {
+            });
+
+            data['seller'] = rows;
+
+            console.log(data);
+            res.json(data)
+            //res.json(rows);
         }
     });
 }
@@ -41,7 +49,14 @@ else{
         }
         else
         {
-            res.json(rows);
+            var data = {};
+            rows.map(function(row) {
+            });
+
+            data['seller'] = rows;
+
+            console.log(data);
+            res.json(data)
         }
  
     });
@@ -144,6 +159,8 @@ router.post('/:id/picture',upload.single('picture'),function(req,res,next){
     });
 
     res.json(req.body);
+
+
 });
 
 module.exports=router;

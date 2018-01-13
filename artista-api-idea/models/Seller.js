@@ -7,7 +7,7 @@ var Seller = {
         return db.query("select * from seller where Id=?", [id], callback);  
     },  
     addSeller: function(Seller, callback) {  
-        return db.query("Insert into seller values(?,?,?,?,?,?)", [Seller.id, Seller.user, Seller.rating], callback);  
+        return db.query("Insert into seller values(?,?,?)", [Seller.id, Seller.user, Seller.rating], callback);
     },  
     deleteSeller: function(id, callback) {  
         return db.query("delete from seller where Id=?", [id], callback);  

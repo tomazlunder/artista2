@@ -13,7 +13,14 @@ if(req.params.id){
             res.json(err);
         }
         else{
-            res.json(rows);
+            var data = {};
+            rows.map(function(row) {
+            });
+
+            data['user'] = rows;
+
+            console.log(data);
+            res.json(data)
         }
     });
 }
@@ -27,8 +34,14 @@ else{
         }
         else
         {
-            res.json(rows);
-        }
+            var data = {};
+            rows.map(function(row) {
+            });
+
+            data['user'] = rows;
+
+            console.log(data);
+            res.json(data)        }
  
     });
 }
