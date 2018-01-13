@@ -2,6 +2,19 @@ var express = require('express');
 var router = express.Router();
 var Listing=require('../models/Listing');
 
+//multer needed for uploading files
+var multer  = require('multer');
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, '../public/pictures')
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.fieldname + '-' + req.body.seller + '-r' +Math.floor((Math.random() * 1000) + 1) +  '-'+ Date.now() + '.png');
+    }
+});
+var upload = multer({ storage: storage });
+
+//BAISC OPERATIONS
 router.get('/:id?',function(req,res,next){
 
 if(req.params.id){
@@ -77,7 +90,8 @@ router.put('/:id',function(req,res,next){
     });
 });
 
-//GET PICTURE IDS RELATED TO LISTING
+//PICTURES
+//get picture ids related to listing
 router.get('/:id/pictures', function(req,res,next){
 
     if(req.params.id){
@@ -101,6 +115,29 @@ router.get('/:id/pictures', function(req,res,next){
             }
         });
     }
+
+});
+
+//upload picture to listing
+router.post('/:id/picture',upload.single('picture'),function(req,res,next){
+    console.log(req.body);
+    console.log(req.file);
+    console.log(req.body.seller);
+
+
+    Listing.addListingPicture(req.params.id, req.file.path,function(err,count){
+        if(err)
+        {
+            console.log(err);
+            //res.json(err);
+        }
+        else
+        {
+            console.log(req.body);
+            //res.json(count);
+        }
+    });
+    res.json(req.body);
 
 });
 

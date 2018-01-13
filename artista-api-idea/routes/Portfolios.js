@@ -2,6 +2,19 @@ var express = require('express');
 var router = express.Router();
 var Portfolio=require('../models/Portfolio');
 
+//multer needed for uploading files
+var multer  = require('multer');
+var storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, '../public/pictures')
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.fieldname + '-' + req.body.seller + '-r' +Math.floor((Math.random() * 1000) + 1) +  '-'+ Date.now() + '.png');
+    }
+});
+var upload = multer({ storage: storage });
+
+//BAISC OPERATIONS
 router.get('/:id?',function(req,res,next){
 
 if(req.params.id){
@@ -77,7 +90,8 @@ router.put('/:id',function(req,res,next){
     });
 });
 
-//GET PICTURE IDS RELATED TO PORTFOLIOS
+//PICTURES
+//get picture ids related to seller(= portfolio) id
 router.get('/:id/pictures', function(req,res,next){
 
     if(req.params.id){
@@ -103,5 +117,27 @@ router.get('/:id/pictures', function(req,res,next){
     }
 
 });
+
+//upload picture to seller portfolio
+router.post('/:id/picture',upload.single('picture'),function(req,res,next){
+    console.log(req.body);
+    console.log(req.file);
+
+    Portfolio.addPortfolioPicture(req.params.id, req.file.path,function(err,count){
+        if(err)
+        {
+            console.log(err);
+            //res.json(err);
+        }
+        else
+        {
+            console.log(req.body);
+            //res.json(count);
+        }
+    });
+    res.json(req.body);
+
+});
+
 
 module.exports=router;

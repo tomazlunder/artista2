@@ -71,6 +71,39 @@ When uploaded they are renamed to picture-random_number-timestamp.png and the pa
 
 
 ### Uploading pictures (currently .png/ .jpg only)
+UPDATED (13.1.18 12:40)
+
+- Uploading profile picture for seller with id = 1
+```
+	POST localhost:3000/Sellers/[id]/picture
+
+	Body (form-data) key:value ..
+	picture : example.png
+```
+
+- Uploading picture for sellers portfolio
+```
+	POST localhost:3000/Portfolios/[seller id]/picture
+
+	Body (form-data) key:value ..
+	picture : example.png
+```
+
+- Uploading picture for seller's (id = 1) listing (id = 1)
+```
+	POST localhost:3000/Listings/[id]/picture
+
+	Body (form-data) key:value ..
+	picture : example.png
+```
+
+
+
+
+
+<details>
+  <summary>Old way</summary>
+
 - Uploading profile picture for seller with id = 1
 ```
 	POST localhost:3000/Pictures/addProfile
@@ -98,3 +131,4 @@ When uploaded they are renamed to picture-random_number-timestamp.png and the pa
 	seller : 1
 	listing : 1
 ```
+</details>
