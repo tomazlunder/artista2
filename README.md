@@ -29,6 +29,7 @@ GET localhost:3000/Users
 ```
 <details>
   <summary>Response</summary>
+
 ```
   {
     "user": [
@@ -51,6 +52,7 @@ GET localhost:3000/Users
     ]
 }
 ```
+
 </details>
 
 - Get specific user:
