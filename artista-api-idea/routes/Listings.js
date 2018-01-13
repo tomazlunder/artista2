@@ -6,7 +6,7 @@ var Listing=require('../models/Listing');
 var multer  = require('multer');
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, '../public/pictures')
+        cb(null, '../../public/pictures')
     },
     filename: function (req, file, cb) {
         cb(null, file.fieldname + '-' + req.body.seller + '-r' +Math.floor((Math.random() * 1000) + 1) +  '-'+ Date.now() + '.png');

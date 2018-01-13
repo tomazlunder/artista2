@@ -36,26 +36,26 @@ WHERE `seller` = 2;
     
     
 INSERT INTO `picture`(`seller`,`isProfile`,`path`) VALUES
-	(1,1,"..\\public\\pictures\\test1.png");
+	(1,1,"..\\..\\public\\pictures\\test1.png");
 
     
-INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`) VALUES
-	(1,199.98,"Statue of david, cheap!", 1, 1, null);
+INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`,`name`) VALUES
+	(1,199.98,"Cheap!", 1, 1, null,"Statue of David");
     
-INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`) VALUES
-	(1,3.50,"Mona Lisa", 1, 2, null);
+INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`,`name`) VALUES
+	(1,3.50,"Brand new!", 1, 2, null,"Mona Lisa");
     
-INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`) VALUES
-	(2,200000,"Lucian Freud's Francis Bacon", 1, 2, null);
+INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`,`name`) VALUES
+	(2,200000,"Stolen", 1, 2, null, "Lucian Freud's Francis Bacon");
     
-CALL proc_addProfilePicture(1,"..\\public\\pictures\\test1.png");
+CALL proc_addProfilePicture(1,"..\\..\\public\\pictures\\test1.png");
     
-CALL proc_addListingPicture(1,"..\\public\\pictures\\listing1_1.png");
-CALL proc_addListingPicture(1,"..\\public\\pictures\\listing1_2.png");
+CALL proc_addListingPicture(1,"..\\..\\public\\pictures\\listing1_1.png");
+CALL proc_addListingPicture(1,"..\\..\\public\\pictures\\listing1_2.png");
 
-CALL proc_addListingPicture(2,"..\\public\\pictures\\listing2_1.png");
-CALL proc_addListingPicture(2,"..\\public\\pictures\\listing2_2.png");
+CALL proc_addListingPicture(2,"..\\..\\public\\pictures\\listing2_1.png");
+CALL proc_addListingPicture(2,"..\\..\\public\\pictures\\listing2_2.png");
 
-CALL proc_addListingPicture(3,"..\\public\\pictures\\listing3_1.png");
+CALL proc_addListingPicture(3,"..\\..\\public\\pictures\\listing3_1.png");
 
-CALL proc_addPortfolioPicture(1,"..\\public\\pictures\\test1.png");
+CALL proc_addPortfolioPicture(1,"..\\..\\public\\pictures\\test1.png");
