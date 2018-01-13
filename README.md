@@ -1,5 +1,7 @@
 # Artista
 
+TODO: (API) -Deleting portfolio, listing pictures. Feed.
+
 ## Database setup
 - Install mySql Server and mySql Workbench (https://dev.mysql.com/downloads/file/?id=473605),
 - run create_script.sql,

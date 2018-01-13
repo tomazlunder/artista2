@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07b35f85-d508-43d8-9193-b03bca578e6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Listing.js" afterPath="$PROJECT_DIR$/models/Listing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Picture.js" afterPath="$PROJECT_DIR$/models/Picture.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Portfolio.js" afterPath="$PROJECT_DIR$/models/Portfolio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Seller.js" afterPath="$PROJECT_DIR$/models/Seller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Listings.js" afterPath="$PROJECT_DIR$/routes/Listings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Pictures.js" afterPath="$PROJECT_DIR$/routes/Pictures.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Portfolios.js" afterPath="$PROJECT_DIR$/routes/Portfolios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Sellers.js" afterPath="$PROJECT_DIR$/routes/Sellers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../README.md" afterPath="$PROJECT_DIR$/../README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -405,12 +398,12 @@
       <workItem from="1514995141390" duration="1044000" />
       <workItem from="1515339773167" duration="10233000" />
       <workItem from="1515416381910" duration="15100000" />
-      <workItem from="1515841648207" duration="2387000" />
+      <workItem from="1515841648207" duration="2568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31913000" />
+    <option name="totallyTimeSpent" value="32094000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
