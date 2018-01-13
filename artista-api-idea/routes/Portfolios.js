@@ -39,7 +39,7 @@ if(req.params.id){
 }
 else{
 
- Portfolio.getAllPortfolio(function(err,rows){
+ Portfolio.getAllPortfolios(function(err,rows){
 
         if(err)
         {
