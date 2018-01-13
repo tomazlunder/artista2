@@ -62,7 +62,7 @@ When uploaded they are renamed to picture-random_number-timestamp.png and the pa
 	Example result: [45,47,67]
 ```
 
-- Same for portfolios (currently bugged, will fix ASAP)
+- Same for portfolios 
 ```
 	GET localhost:3000/Portfolios/[seller id]/pictures
 
