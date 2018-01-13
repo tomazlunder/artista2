@@ -110,21 +110,19 @@ router.get('/:id/pictures', function(req,res,next){
 
     if(req.params.id){
         Portfolio.pictureIds(req.params.id,function(err,rows){
-            console.log(rows)
-
-            var ids = [];
-            rows.forEach(function(element){
-                ids.push(element.picture_id);
-            })
-
-            console.log(ids);
-
             if(err)
             {
                 res.json(err);
             }
             else{
-                res.json(ids);
+                var data = {};
+                rows.map(function(row) {
+                });
+
+                data['ids'] = rows;
+
+                console.log(data);
+                res.json(data)
 
             }
         });
