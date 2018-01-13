@@ -104,7 +104,7 @@ UPDATED (13.1.18 12:40)
 
 
 <details>
-  <summary>Old way</summary>
+  <summary>Old way (Don't use this)</summary>
 
 - Uploading profile picture for seller with id = 1
 ```
