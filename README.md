@@ -27,16 +27,62 @@ https://www.getpostman.com/
 ```
 GET localhost:3000/Users
 ```
+<details>
+  <summary>Response</summary>
+```
+  {
+    "user": [
+        {
+            "id": 1,
+            "name": "Anton Banana",
+            "email": "anton.banana@mail.com",
+            "pwdhash": "0000",
+            "regTimestamp": "2018-01-13T18:39:28.000Z",
+            "type": 0
+        },
+        {
+            "id": 2,
+            "name": "Benjamin Hruška",
+            "email": "ben.hr@mail.com",
+            "pwdhash": "0000",
+            "regTimestamp": "2018-01-13T18:39:28.000Z",
+            "type": 0
+        }
+    ]
+}
+```
+<details>
+
 - Get specific user:
 ```
  GET localhost:3000/Users/1
 ```
+<details>
+  <summary>Response</summary>
+```
+  {
+    "user": [
+        {
+            "id": 1,
+            "name": "Anton Banana",
+            "email": "anton.banana@mail.com",
+            "pwdhash": "0000",
+            "regTimestamp": "2018-01-13T18:39:28.000Z",
+            "type": 0
+        }
+    ]
+}
+```
+<details>
+
 - Insert user: 		 
 ```
 	POST localhost:3000/Users/
  	Header(key:value) = Content-Type : application/json
  	Body: { "name":"Marko Apijevec", "email":"marko@mail.com", "pwdhash"="0000"}
 ```
+
+
 
 
 ## API - Pictures
@@ -49,6 +95,8 @@ When uploaded they are renamed to picture-random_number-timestamp.png and the pa
 ```
 	GET localhost:3000/Pictures/[id]
 ```
+
+
 
 - Sellers profile picture can be retreived by his id (if there is no profile picture it retrieves the default image)
 ```
