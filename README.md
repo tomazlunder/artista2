@@ -51,7 +51,7 @@ GET localhost:3000/Users
     ]
 }
 ```
-<details>
+</details>
 
 - Get specific user:
 ```
@@ -73,7 +73,7 @@ GET localhost:3000/Users
     ]
 }
 ```
-<details>
+</details>
 
 - Insert user: 		 
 ```
