@@ -43,6 +43,10 @@ app.use('/Categories', Categories);
 app.use('/Portfolios', Portfolios);
 app.use('/Pictures', PictureService);
 
+app.use('/pics', express.static(__dirname + '/../public/pictures'))
+
+
+
 
 // catch 404 and forward to error handler  
 app.use(function(req, res, next) {  
