@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07b35f85-d508-43d8-9193-b03bca578e6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../artista-db/model.mwb" afterPath="$PROJECT_DIR$/../artista-db/model.mwb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../artista-db/model.mwb.bak" afterPath="$PROJECT_DIR$/../artista-db/model.mwb.bak" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Listing.js" afterPath="$PROJECT_DIR$/models/Listing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Portfolio.js" afterPath="$PROJECT_DIR$/models/Portfolio.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Listings.js" afterPath="$PROJECT_DIR$/routes/Listings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/Portfolios.js" afterPath="$PROJECT_DIR$/routes/Portfolios.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,19 +85,28 @@
       <file leaf-file-name="Portfolios.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/Portfolios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+            <state relative-caret-position="384">
+              <caret line="129" column="30" lean-forward="true" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
               <folding>
                 <element signature="e#1014#1298#0" expanded="false" />
                 <element signature="e#1345#1638#0" expanded="false" />
                 <element signature="e#1684#1928#0" expanded="false" />
                 <element signature="e#1971#2181#0" expanded="false" />
-                <element signature="e#2298#2715#0" expanded="false" />
-                <element signature="e#2830#3199#0" expanded="false" />
-                <element signature="e#2969#3170#0" expanded="false" />
-                <element signature="e#2995#3065#0" expanded="false" />
-                <element signature="e#3087#3164#0" expanded="false" />
+                <element signature="e#3055#3424#0" expanded="false" />
+                <element signature="e#3194#3395#0" expanded="false" />
+                <element signature="e#3220#3290#0" expanded="false" />
+                <element signature="e#3312#3389#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Portfolio.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/Portfolio.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="149" lean-forward="false" selection-start-line="20" selection-start-column="149" selection-end-line="20" selection-end-column="149" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,8 +114,8 @@
       <file leaf-file-name="Listings.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/Listings.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="90" column="3" lean-forward="true" selection-start-line="90" selection-start-column="3" selection-end-line="90" selection-end-column="3" />
+            <state relative-caret-position="265">
+              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="129" selection-end-column="30" />
               <folding>
                 <element signature="e#593#1290#0" expanded="false" />
                 <element signature="e#702#740#0" expanded="false" />
@@ -119,19 +132,18 @@
                 <element signature="e#2019#2151#0" expanded="false" />
                 <element signature="e#2046#2084#0" expanded="false" />
                 <element signature="e#2106#2145#0" expanded="false" />
-                <element signature="e#2257#2672#0" expanded="false" />
-                <element signature="e#2778#3176#0" expanded="false" />
-                <element signature="e#2974#3044#0" expanded="false" />
+                <element signature="e#3003#3401#0" expanded="false" />
+                <element signature="e#3199#3269#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Feed.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Feed.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/Feed.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -160,8 +172,8 @@
       <file leaf-file-name="Listing.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Listing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="255" lean-forward="false" selection-start-line="28" selection-start-column="255" selection-end-line="28" selection-end-column="255" />
+            <state relative-caret-position="357">
+              <caret line="21" column="147" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="147" />
               <folding />
             </state>
           </provider>
@@ -201,17 +213,17 @@
         <option value="$PROJECT_DIR$/routes/PictureService.js" />
         <option value="path.js" />
         <option value="$PROJECT_DIR$/models/User.js" />
-        <option value="$PROJECT_DIR$/models/Portfolio.js" />
         <option value="$PROJECT_DIR$/models/Picture.js" />
         <option value="$PROJECT_DIR$/models/Seller.js" />
         <option value="$PROJECT_DIR$/routes/Users.js" />
         <option value="$PROJECT_DIR$/routes/Sellers.js" />
-        <option value="$PROJECT_DIR$/routes/Portfolios.js" />
         <option value="$PROJECT_DIR$/routes/Pictures.js" />
-        <option value="$PROJECT_DIR$/routes/Listings.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/models/Listing.js" />
         <option value="$PROJECT_DIR$/routes/Feed.js" />
+        <option value="$PROJECT_DIR$/models/Listing.js" />
+        <option value="$PROJECT_DIR$/routes/Listings.js" />
+        <option value="$PROJECT_DIR$/routes/Portfolios.js" />
+        <option value="$PROJECT_DIR$/models/Portfolio.js" />
       </list>
     </option>
   </component>
@@ -390,12 +402,12 @@
       <workItem from="1515416381910" duration="15100000" />
       <workItem from="1515841648207" duration="14617000" />
       <workItem from="1515892126881" duration="789000" />
-      <workItem from="1515933045658" duration="3298000" />
+      <workItem from="1515933045658" duration="5203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48230000" />
+    <option name="totallyTimeSpent" value="50135000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,7 +434,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1748401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1748401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -519,11 +531,10 @@
             <element signature="e#1345#1638#0" expanded="false" />
             <element signature="e#1684#1928#0" expanded="false" />
             <element signature="e#1971#2181#0" expanded="false" />
-            <element signature="e#2298#2715#0" expanded="false" />
-            <element signature="e#2830#3199#0" expanded="false" />
-            <element signature="e#2969#3170#0" expanded="false" />
-            <element signature="e#2995#3065#0" expanded="false" />
-            <element signature="e#3087#3164#0" expanded="false" />
+            <element signature="e#3055#3424#0" expanded="false" />
+            <element signature="e#3194#3395#0" expanded="false" />
+            <element signature="e#3220#3290#0" expanded="false" />
+            <element signature="e#3312#3389#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -576,9 +587,8 @@
             <element signature="e#2019#2151#0" expanded="false" />
             <element signature="e#2046#2084#0" expanded="false" />
             <element signature="e#2106#2145#0" expanded="false" />
-            <element signature="e#2257#2672#0" expanded="false" />
-            <element signature="e#2778#3176#0" expanded="false" />
-            <element signature="e#2974#3044#0" expanded="false" />
+            <element signature="e#3003#3401#0" expanded="false" />
+            <element signature="e#3199#3269#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -664,9 +674,8 @@
             <element signature="e#2019#2151#0" expanded="false" />
             <element signature="e#2046#2084#0" expanded="false" />
             <element signature="e#2106#2145#0" expanded="false" />
-            <element signature="e#2257#2672#0" expanded="false" />
-            <element signature="e#2778#3176#0" expanded="false" />
-            <element signature="e#2974#3044#0" expanded="false" />
+            <element signature="e#3003#3401#0" expanded="false" />
+            <element signature="e#3199#3269#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -680,11 +689,10 @@
             <element signature="e#1345#1638#0" expanded="false" />
             <element signature="e#1684#1928#0" expanded="false" />
             <element signature="e#1971#2181#0" expanded="false" />
-            <element signature="e#2298#2715#0" expanded="false" />
-            <element signature="e#2830#3199#0" expanded="false" />
-            <element signature="e#2969#3170#0" expanded="false" />
-            <element signature="e#2995#3065#0" expanded="false" />
-            <element signature="e#3087#3164#0" expanded="false" />
+            <element signature="e#3055#3424#0" expanded="false" />
+            <element signature="e#3194#3395#0" expanded="false" />
+            <element signature="e#3220#3290#0" expanded="false" />
+            <element signature="e#3312#3389#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -788,9 +796,8 @@
             <element signature="e#2019#2151#0" expanded="false" />
             <element signature="e#2046#2084#0" expanded="false" />
             <element signature="e#2106#2145#0" expanded="false" />
-            <element signature="e#2257#2672#0" expanded="false" />
-            <element signature="e#2778#3176#0" expanded="false" />
-            <element signature="e#2974#3044#0" expanded="false" />
+            <element signature="e#3003#3401#0" expanded="false" />
+            <element signature="e#3199#3269#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -981,13 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Portfolio.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/Parser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -1032,36 +1032,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Portfolios.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="153" column="0" lean-forward="true" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-          <folding>
-            <element signature="e#1014#1298#0" expanded="false" />
-            <element signature="e#1345#1638#0" expanded="false" />
-            <element signature="e#1684#1928#0" expanded="false" />
-            <element signature="e#1971#2181#0" expanded="false" />
-            <element signature="e#2298#2715#0" expanded="false" />
-            <element signature="e#2830#3199#0" expanded="false" />
-            <element signature="e#2969#3170#0" expanded="false" />
-            <element signature="e#2995#3065#0" expanded="false" />
-            <element signature="e#3087#3164#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
           <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Picture.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1115,10 +1089,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/Picture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/Feed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Listing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="147" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/Listings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="90" column="3" lean-forward="true" selection-start-line="90" selection-start-column="3" selection-end-line="90" selection-end-column="3" />
+        <state relative-caret-position="265">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="129" selection-end-column="30" />
           <folding>
             <element signature="e#593#1290#0" expanded="false" />
             <element signature="e#702#740#0" expanded="false" />
@@ -1135,25 +1133,33 @@
             <element signature="e#2019#2151#0" expanded="false" />
             <element signature="e#2046#2084#0" expanded="false" />
             <element signature="e#2106#2145#0" expanded="false" />
-            <element signature="e#2257#2672#0" expanded="false" />
-            <element signature="e#2778#3176#0" expanded="false" />
-            <element signature="e#2974#3044#0" expanded="false" />
+            <element signature="e#3003#3401#0" expanded="false" />
+            <element signature="e#3199#3269#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Listing.js">
+    <entry file="file://$PROJECT_DIR$/routes/Portfolios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="255" lean-forward="false" selection-start-line="28" selection-start-column="255" selection-end-line="28" selection-end-column="255" />
-          <folding />
+        <state relative-caret-position="384">
+          <caret line="129" column="30" lean-forward="true" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+          <folding>
+            <element signature="e#1014#1298#0" expanded="false" />
+            <element signature="e#1345#1638#0" expanded="false" />
+            <element signature="e#1684#1928#0" expanded="false" />
+            <element signature="e#1971#2181#0" expanded="false" />
+            <element signature="e#3055#3424#0" expanded="false" />
+            <element signature="e#3194#3395#0" expanded="false" />
+            <element signature="e#3220#3290#0" expanded="false" />
+            <element signature="e#3312#3389#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/Feed.js">
+    <entry file="file://$PROJECT_DIR$/models/Portfolio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="340">
+          <caret line="20" column="149" lean-forward="false" selection-start-line="20" selection-start-column="149" selection-end-line="20" selection-end-column="149" />
           <folding />
         </state>
       </provider>

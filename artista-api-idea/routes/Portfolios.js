@@ -119,7 +119,12 @@ router.get('/:id/pictures', function(req,res,next){
                 rows.map(function(row) {
                 });
 
-                data['ids'] = rows;
+                data['pictures'] = rows;
+
+                for (var i = 0; i < data.pictures.length; i++){
+                    var newpath = "pics/"+ data.pictures[i].path.split('\\').pop();
+                    data.pictures[i].path = newpath;
+                }
 
                 console.log(data);
                 res.json(data)

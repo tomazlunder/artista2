@@ -18,7 +18,8 @@ var Listing = {
 
     //LISTING PICTURES
     pictureIds: function(id,callback){
-        return db.query("select picture_id from listing_picture where listing_id = ?", [id], callback);
+        console.log(id);
+        return db.query("select picture.path from listing_picture left join picture on listing_picture.picture_id = picture.id where listing_id = ?", [id], callback);
     },
     addListingPicture: function(listing, path, callback) {
         return db.query("CALL proc_addListingPicture(?,?)", [listing, path], callback);

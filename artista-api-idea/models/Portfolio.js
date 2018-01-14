@@ -18,7 +18,7 @@ var Portfolio = {
 
     //PORTFOLIO PICTURES
     pictureIds: function(id,callback){
-        return db.query("select picture_id from portfolio_picture where portfolio_id = ?", [id], callback);
+        return db.query("select picture.path from portfolio_picture left join picture on portfolio_picture.picture_id = picture.id where portfolio_id = ?", [id], callback);
     },
     addPortfolioPicture: function(seller, path, callback) {
         return db.query("CALL proc_addProfilePicture(?,?)", [seller, path], callback);

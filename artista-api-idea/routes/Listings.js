@@ -119,7 +119,12 @@ router.get('/:id/pictures', function(req,res,next){
                 rows.map(function(row) {
                 });
 
-                data['ids'] = rows;
+                data['pictures'] = rows;
+
+                for (var i = 0; i < data.pictures.length; i++){
+                    var newpath = "pics/"+ data.pictures[i].path.split('\\').pop();
+                    data.pictures[i].path = newpath;
+                }
 
                 console.log(data);
                 res.json(data)
@@ -153,30 +158,5 @@ router.post('/:id/picture',upload.single('picture'),function(req,res,next){
 
 });
 
-
-//FEED
-router.get('/feed',function(req,res,next){
-        console.log("LLLAA");
-        Listing.getFeed(function(err,rows){
-
-            if(err)
-            {
-                res.json(err);
-            }
-            else{
-                console.log("LLLAA");
-
-                var data = {};
-                rows.map(function(row) {
-                });
-
-                data['feed'] = rows;
-
-                console.log(data);
-                res.json(data);
-            }
-        });
-
-});
 
 module.exports=router;
