@@ -19,7 +19,7 @@ var Listing = {
     //LISTING PICTURES
     pictureIds: function(id,callback){
         console.log(id);
-        return db.query("select picture.path from listing_picture left join picture on listing_picture.picture_id = picture.id where listing_id = ?", [id], callback);
+        return db.query("SELECT picture.path from listing_picture LEFT JOIN picture on listing_picture.picture_id = picture.id WHERE listing_id = ?", [id], callback);
     },
     addListingPicture: function(listing, path, callback) {
         return db.query("CALL proc_addListingPicture(?,?)", [listing, path], callback);
@@ -27,7 +27,13 @@ var Listing = {
 
     //FEED
     getFeed: function(callback){
-        return db.query("select listing.id, listing.seller, listing.price, listing.name, listing.description, listing.timestamp, listing.category, picture.path from listing LEFT JOIN picture ON listing.mainPic = picture.id ORDER BY listing.`timestamp` ASC;", callback);
+        return db.query("SELECT listing.id, listing.seller, listing.price, listing.name, listing.description,\n" +
+            "\t\tlisting.timestamp, listing.category, picture.path , artista.user.`name` as userName, artista.user.email\n" +
+            "from listing \n" +
+            "LEFT JOIN picture ON listing.mainPic = picture.id \n" +
+            "LEFT JOIN seller ON listing.seller = seller.id\n" +
+            "LEFT JOIN artista.user ON seller.user = user.id\n" +
+            "ORDER BY listing.`timestamp` ASC;", callback);
     }
 };  
 module.exports = Listing; 
