@@ -1,9 +1,16 @@
 # Artista
 
-TODO: (API) -Deleting portfolio, listing pictures. Feed.
+## This project includes:
+	- MySQL Database (artista-db)
+	- Express DB API (artista-api-idea)
+	- PHP Web Application (artista-webpage)
+	- Android Application (artista-android, apk)
 
-## Database setup
-- Install mySql Server and mySql Workbench (https://dev.mysql.com/downloads/file/?id=473605),
+
+## ARTISTA-DB
+
+### Database setup
+- Install mySql Server and mySql Workbench (https://dev.mysql.com/downloads/file/?id=473605) or use phpMyAdmin,
 - run create_script.sql,
 - run create_testData_script.sql,
 - change root password to test.
@@ -11,8 +18,9 @@ TODO: (API) -Deleting portfolio, listing pictures. Feed.
 ### Database model
 ![alt text](https://github.com/tomazlunder/artista2/blob/master/artista-db/model.png "Model")
 
+##ARTISTA-API
 
-## API setup
+### API setup
 To start the api:
 - Install NodeJS (https://nodejs.org/en/)
 - cmd
@@ -89,11 +97,11 @@ GET localhost:3000/Users
 
 
 
-## API - Pictures
+### API - Pictures
 Pictures are stored in "../artista-api-idea/public/pictures"
 When uploaded they are renamed to picture-random_number-timestamp.png and the path to the file is saved in the picture table of the database.
 
-### Getting pictures
+#### Getting pictures
 - Pictures can be retreived by their id:
 
 ```
@@ -124,7 +132,7 @@ When uploaded they are renamed to picture-random_number-timestamp.png and the pa
 ```
 
 
-### Uploading pictures (currently .png/ .jpg only)
+#### Uploading pictures (currently .png/ .jpg only)
 UPDATED (13.1.18 12:40)
 
 - Uploading profile picture for seller with id = 1
@@ -152,37 +160,3 @@ UPDATED (13.1.18 12:40)
 ```
 
 
-
-
-
-<details>
-  <summary>Old way (Don't use this)</summary>
-
-- Uploading profile picture for seller with id = 1
-```
-	POST localhost:3000/Pictures/addProfile
-
-	Body (form-data) key:value ..
-	picture : example.png
-	seller : 1
-```
-
-- Uploading picture for sellers portfolio
-```
-	POST localhost:3000/Pictures/addPortfolio
-
-	Body (form-data) key:value ..
-	picture : example.png
-	seller : 1
-```
-
-- Uploading picture for seller's (id = 1) listing (id = 1)
-```
-	POST localhost:3000/Pictures/addListing
-
-	Body (form-data) key:value ..
-	picture : example.png
-	seller : 1
-	listing : 1
-```
-</details>
