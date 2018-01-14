@@ -14,6 +14,8 @@ var Listings = require('./routes/Listings');
 var Categories = require('./routes/Categories');
 var Portfolios = require('./routes/Portfolios');
 var PictureService = require('./routes/Pictures');
+var Feed = require('./routes/Feed');
+
 
 var public = require
 
@@ -42,6 +44,8 @@ app.use('/Listings', Listings);
 app.use('/Categories', Categories);
 app.use('/Portfolios', Portfolios);
 app.use('/Pictures', PictureService);
+app.use('/Feed', Feed);
+
 
 app.use('/pics', express.static(__dirname + '/../public/pictures'))
 

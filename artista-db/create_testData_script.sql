@@ -41,12 +41,19 @@ INSERT INTO `picture`(`seller`,`isProfile`,`path`) VALUES
     
 INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`,`name`) VALUES
 	(1,199.98,"Cheap!", 1, 1, null,"Statue of David");
+
+DO SLEEP(1);
     
 INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`,`name`) VALUES
 	(1,3.50,"Brand new!", 1, 2, null,"Mona Lisa");
     
+DO SLEEP(1);
+
 INSERT INTO `listing`(`seller`,`price`,`description`,`shown`,`category`,`mainPic`,`name`) VALUES
 	(2,200000,"Stolen", 1, 2, null, "Lucian Freud's Francis Bacon");
+    
+DO SLEEP(1);
+
     
 CALL proc_addProfilePicture(1,"..\\..\\public\\pictures\\test1.png");
     

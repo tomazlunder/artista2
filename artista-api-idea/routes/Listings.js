@@ -153,4 +153,30 @@ router.post('/:id/picture',upload.single('picture'),function(req,res,next){
 
 });
 
+
+//FEED
+router.get('/feed',function(req,res,next){
+        console.log("LLLAA");
+        Listing.getFeed(function(err,rows){
+
+            if(err)
+            {
+                res.json(err);
+            }
+            else{
+                console.log("LLLAA");
+
+                var data = {};
+                rows.map(function(row) {
+                });
+
+                data['feed'] = rows;
+
+                console.log(data);
+                res.json(data);
+            }
+        });
+
+});
+
 module.exports=router;

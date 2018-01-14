@@ -22,6 +22,11 @@ var Listing = {
     },
     addListingPicture: function(listing, path, callback) {
         return db.query("CALL proc_addListingPicture(?,?)", [listing, path], callback);
+    },
+
+    //FEED
+    getFeed: function(callback){
+        return db.query("select listing.id, listing.seller, listing.price, listing.name, listing.description, listing.timestamp, listing.category, picture.path from listing LEFT JOIN picture ON listing.mainPic = picture.id ORDER BY listing.`timestamp` ASC;", callback);
     }
 };  
 module.exports = Listing; 
