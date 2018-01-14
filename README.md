@@ -7,7 +7,7 @@
 	- Android Application (artista-android, apk)
 
 
-## ARTISTA-DB
+## <font color="green">ARTISTA-DB</font>
 
 ### Database setup
 - Install mySql Server and mySql Workbench (https://dev.mysql.com/downloads/file/?id=473605) or use phpMyAdmin,
@@ -18,7 +18,7 @@
 ### Database model
 ![alt text](https://github.com/tomazlunder/artista2/blob/master/artista-db/model.png "Model")
 
-##ARTISTA-API
+##<font color="green">ARTISTA-API</font>
 
 ### API setup
 To start the api:
