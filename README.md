@@ -3,6 +3,8 @@
 ## This project includes:
 	- MySQL Database (artista-db)
 	- Express DB API (artista-api-idea)
+	
+## Not in this repo:
 	- PHP Web Application (artista-webpage)
 	- Android Application (artista-android, apk)
 
